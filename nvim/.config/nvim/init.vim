@@ -48,3 +48,32 @@ let g:airline_theme='jellybeans'
 
 "{{{---General configuration---}}}
 colorscheme jellybeans
+set scrolloff=10
+set number
+set relativenumber
+
+set t_Co=256
+set cscopetag
+set incsearch
+"set hidden
+
+set shiftwidth=4
+set tabstop=4
+set noexpandtab
+set softtabstop=0
+
+" highlight tabs and trailing spaces
+set list
+
+map <F2> :bprevious<CR>
+map <F3> :bnext<CR>
+
+"rebind my favorite commands from Git.vim for Fugitive
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gl :Glog<cr>
+nmap <leader>gd :Gdiff<cr>
+nmap <leader>gb :Gblame<cr>
+
+
