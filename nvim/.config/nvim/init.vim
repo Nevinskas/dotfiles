@@ -20,6 +20,9 @@ Plugin 'mhinz/vim-signify'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
+Plugin 'elzr/vim-json'
+Plugin 'bogado/file-line'
+Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
