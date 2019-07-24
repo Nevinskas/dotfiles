@@ -21,7 +21,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
 Plugin 'elzr/vim-json'
-Plugin 'bogado/file-line'
+"Plugin 'bogado/file-line' breaks tar.gz opening
 Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
