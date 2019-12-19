@@ -24,6 +24,7 @@ Plugin 'elzr/vim-json'
 "Plugin 'bogado/file-line' breaks tar.gz opening
 Plugin 'tpope/vim-repeat'
 Plugin 'simplyzhao/cscope_maps.vim'
+Plugin 'sgeb/vim-diff-fold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
