@@ -59,7 +59,7 @@ set cscopetag
 set incsearch
 "set hidden
 
-set shiftwidth=4
+set shiftwidth=8
 set tabstop=8
 set noexpandtab
 set softtabstop=0
