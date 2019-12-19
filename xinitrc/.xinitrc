@@ -1,6 +1,6 @@
 #
 #thunderbird &
-nm-applet &
+#nm-applet &
 #blueman-applet &
 #
 
