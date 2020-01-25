@@ -200,8 +200,7 @@ local function set_wallpaper(s)
             wallpaper = wallpaper(s)
         end
         --gears.wallpaper.fit(wallpaper, s, '#3f3f3f')
-        gears.wallpaper.centered(wallpaper, s, '#3f3f3f')
---        gears.wallpaper.maximized(wallpaper, s, true)
+        gears.wallpaper.maximized(wallpaper, s, false)
     end
 end
 
