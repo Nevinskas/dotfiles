@@ -2,7 +2,7 @@
 #thunderbird &
 #nm-applet &
 #blueman-applet &
-#
+barM &
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -41,5 +41,5 @@ fi
 [ -f ~/.xprofile ] && source ~/.xprofile
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-exec awesome
+exec dwm
 
