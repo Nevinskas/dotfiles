@@ -40,8 +40,7 @@ export PS1="\u@\h [\w]\n\\$ \[$(tput sgr0)\]"
 
 export HISTFILESIZE=100000
 export HISTSIZE=100000
-HISTCONTROL=erasedups
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth:erasedups
 
 
 #PATH=$PATH:/home/tadas/esp8266/esp-open-sdk/xtensa-lx106-elf/bin:/usr/java/jre1.8.0_151
