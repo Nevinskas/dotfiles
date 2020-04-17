@@ -3,6 +3,7 @@
 #nm-applet &
 #blueman-applet &
 barM &
+feh --bg-center ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1) &
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -41,5 +42,4 @@ fi
 [ -f ~/.xprofile ] && source ~/.xprofile
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-exec dwm
-
+exec startdwm
