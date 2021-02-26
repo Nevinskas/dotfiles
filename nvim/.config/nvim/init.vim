@@ -25,6 +25,8 @@ Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-repeat'
 Plugin 'simplyzhao/cscope_maps.vim'
 Plugin 'sgeb/vim-diff-fold'
+Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'junegunn/fzf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
