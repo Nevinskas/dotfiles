@@ -27,6 +27,8 @@ Plugin 'simplyzhao/cscope_maps.vim'
 Plugin 'sgeb/vim-diff-fold'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'junegunn/fzf'
+Plugin 'dhruvasagar/vim-zoom'
+Plugin 'preservim/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,4 +82,13 @@ nmap <leader>gl :Glog<cr>
 nmap <leader>gd :Gdiff<cr>
 nmap <leader>gb :Gblame<cr>
 
+"Spell checking
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
 
+"Auto completion
+autocmd FileType markdown setlocal complete+=kspell
+autocmd FileType gitcommit setlocal complete+=kspell
+
+"Manual spell enable/disable
+nnoremap <F9> :setlocal spell!<cr>
