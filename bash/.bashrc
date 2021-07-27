@@ -6,6 +6,13 @@
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
+function prs_fw_ver()
+{
+	dd if=$1 skip=296 count=3 bs=1 2>/dev/null &&
+	echo -n . &&
+	dd if=$1 skip=311 count=7 bs=1 2>/dev/null &&
+	echo;
+};
 
 mini()
 {
