@@ -42,4 +42,6 @@ fi
 [ -f ~/.xprofile ] && source ~/.xprofile
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
+systemctl --user import-environment DISPLAY
+
 exec startdwm
