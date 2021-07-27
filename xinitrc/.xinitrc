@@ -3,7 +3,7 @@
 #nm-applet &
 #blueman-applet &
 barM &
-feh --bg-center ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1) &
+feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1) &
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
