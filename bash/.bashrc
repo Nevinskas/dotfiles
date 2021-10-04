@@ -23,7 +23,7 @@ mini()
 	echo "~~~LOG STOP at $(date)~~~" >> $LOGFILE;
 }
 
-export PATH=/home/$USER/bin:$PATH
+export PATH=$PATH:/home/$USER/bin
 
 alias l='ls -l --color=always'
 alias ls='ls --color=always'
