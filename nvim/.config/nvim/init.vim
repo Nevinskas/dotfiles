@@ -73,6 +73,7 @@ set list
 
 map <F2> :bprevious<CR>
 map <F3> :bnext<CR>
+map <F4> :NERDTreeToggle<CR>
 
 "rebind my favorite commands from Git.vim for Fugitive
 nmap <leader>gs :Gstatus<cr>
