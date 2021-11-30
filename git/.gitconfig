@@ -1,0 +1,24 @@
+[user]
+	email = tadasnevinskas@gmail.com
+	name = Tadas Nevinskas
+[pull]
+	rebase = true
+[alias]
+	s = status
+	d = diff
+	ch = checkout
+	br = branch
+	ca = commit --amend
+	cane = commit --amend --no-edit
+	pr = pull --rebase
+	l = log
+	co = commit
+	coa = commit --amend
+	coane = commit --amend --no-edit
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color]
+	ui = auto
