@@ -1,9 +1,10 @@
 #
 thunderbird &
 nm-applet &
-numlockx &
 slack &
-#blueman-applet &
+#thunderbird &
+nm-applet &
+blueman-applet &
 barM &
 feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1) &
 
