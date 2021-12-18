@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/bin/X -nolisten tcp -ardelay 250 -arinterval 30 "$@"
+exec /usr/bin/X -dpi 96 -nolisten tcp -ardelay 250 -arinterval 30 "$@"
