@@ -2,39 +2,49 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+"{{{---Vim Plug Autoinstall---}}}
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" Keep Plugin commands between vundle#begin/end.
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-signify'
-"Plugin 'edkolev/tmuxline.vim'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rking/ag.vim'
-Plugin 'elzr/vim-json'
-"Plugin 'bogado/file-line' breaks tar.gz opening
-Plugin 'tpope/vim-repeat'
-Plugin 'simplyzhao/cscope_maps.vim'
-Plugin 'sgeb/vim-diff-fold'
-Plugin 'vim-scripts/BufOnly.vim'
-Plugin 'junegunn/fzf'
-Plugin 'dhruvasagar/vim-zoom'
-Plugin 'preservim/tagbar'
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+" Make sure you use single quotes
+
+Plug 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
+"Plug 'edkolev/tmuxline.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'rking/ag.vim'
+Plug 'elzr/vim-json'
+"Plug 'bogado/file-line' breaks tar.gz opening
+Plug 'tpope/vim-repeat'
+Plug 'simplyzhao/cscope_maps.vim'
+Plug 'sgeb/vim-diff-fold'
+Plug 'vim-scripts/BufOnly.vim'
+Plug 'junegunn/fzf'
+Plug 'dhruvasagar/vim-zoom'
+Plug 'preservim/tagbar'
+"Plug 'dhruvasagar/vim-table-mode'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
 
 " Brief help
 " :PluginList       - lists configured plugins
