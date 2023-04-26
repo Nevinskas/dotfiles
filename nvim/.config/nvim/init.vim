@@ -31,13 +31,14 @@ Plug 'rking/ag.vim'
 Plug 'elzr/vim-json'
 "Plug 'bogado/file-line' breaks tar.gz opening
 Plug 'tpope/vim-repeat'
-Plug 'simplyzhao/cscope_maps.vim'
 Plug 'sgeb/vim-diff-fold'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'junegunn/fzf'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'preservim/tagbar'
 "Plug 'dhruvasagar/vim-table-mode'
+Plug 'dhananjaylatkar/cscope_maps.nvim'
+Plug 'folke/which-key.nvim'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -45,6 +46,8 @@ call plug#end()
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
+
+lua require("cscope_maps").setup({})
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -69,7 +72,6 @@ set number
 set relativenumber
 
 set t_Co=256
-set cscopetag
 set incsearch
 "set hidden
 
