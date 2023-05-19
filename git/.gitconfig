@@ -3,6 +3,11 @@
 	name = Tadas Nevinskas
 [pull]
 	rebase = true
+
+[push]
+	autoSetupRemote = true
+	recurseSubmodules = on-demand
+
 [alias]
 	s = status
 	d = diff
@@ -22,3 +27,24 @@
 	required = true
 [color]
 	ui = auto
+
+[merge]
+	tool = nvim -d
+
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
+[help]
+	autocorrect = 20
+
+[diff]
+	submodule = log
+
+[status]
+	submodulesummary = 1
+
+[submodule]
+	recurse = 1
+
+[core]
+	abbrev = 8
