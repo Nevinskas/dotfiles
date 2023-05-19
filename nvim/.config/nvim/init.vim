@@ -64,6 +64,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '|'
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_theme='jellybeans'
+let g:airline_extensions = ['tabline']
+"let g:airline_extensions = []
+"let g:airline_highlighting_cache = 1
 
 "{{{---General configuration---}}}
 colorscheme jellybeans
@@ -82,6 +85,9 @@ set softtabstop=0
 
 " highlight tabs and trailing spaces
 set list
+
+" disable mouse
+set mouse=
 
 map <F2> :bprevious<CR>
 map <F3> :bnext<CR>
